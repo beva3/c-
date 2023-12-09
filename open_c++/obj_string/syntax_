@@ -1,0 +1,18 @@
+pour poo:
+	objet : 'lay zavatra noforonina
+		vinan'ny reel
+	manao inona : ?
+		objet.methode()
+			ex :
+			olona.mandeha();
+pour le chaine de caracter:
+longeure du chaine:
+	ma_chaine.size();
+	en c++ chaine :objet
+sypprimer tout les contenu
+	ma_chaine.erase(); [effacer]
+	...
+sous chaine : substr
+	string chaine("Bonjour !");
+	chaine.substr(3) donne "jour !" n'oublier le c
+	chaine.substr(3, 4) donne "jour" c4 ihany no raisiny manomboka eo @ 3
