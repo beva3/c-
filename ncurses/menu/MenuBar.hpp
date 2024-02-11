@@ -13,6 +13,7 @@ public:
 
     MenuBar(WINDOW* window,Menu* menues,int numMenuItems);
     ~MenuBar();
+    void drawMenuBar();
 };
 
 

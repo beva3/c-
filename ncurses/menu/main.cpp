@@ -28,6 +28,8 @@ int main(int argc, char const *argv[]){
     mvwprintw(window,4,2,"%d",menues[2].startX);
  */
 
+    menuBar.drawMenuBar();
+
     wgetch(window);
     endwin();
     return 0;
