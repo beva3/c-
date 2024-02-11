@@ -3,5 +3,6 @@
 
 #include <ncurses.h>
 #include <string>
+using namespace std;
 
 #endif // !__MY__LIB__
