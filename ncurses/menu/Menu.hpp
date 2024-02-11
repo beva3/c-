@@ -8,6 +8,7 @@ public:
     
     string textMenu;
     char trigger;
+    int startX;
 
     Menu(string textMenu,char trigger);
     ~Menu();

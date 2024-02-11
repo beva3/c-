@@ -1,5 +1,6 @@
 #include "myLib.hpp"
 #include "Menu.hpp"
+#include "MenuBar.hpp"
 
 int main(int argc, char const *argv[]){
     initscr();
@@ -19,7 +20,13 @@ int main(int argc, char const *argv[]){
     box(window, 0,0);
 
     //mvwprintw(window, 0,1,"%s",menues[0].textMenu.c_str());
+    MenuBar menuBar(window,menues,3);
 
+/*     
+    mvwprintw(window,2,2,"%d",menues[0].startX);
+    mvwprintw(window,3,2,"%d",menues[1].startX);
+    mvwprintw(window,4,2,"%d",menues[2].startX);
+ */
 
     wgetch(window);
     endwin();
