@@ -11,9 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,18 +25,32 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QPushButton *buttonQuit;
+    QTableView *tableView;
+    QPushButton *Tmp;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(267, 274);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         buttonQuit = new QPushButton(centralwidget);
         buttonQuit->setObjectName(QString::fromUtf8("buttonQuit"));
-        buttonQuit->setGeometry(QRect(660, 330, 89, 25));
+        buttonQuit->setGeometry(QRect(149, 220, 111, 31));
+        QFont font;
+        font.setPointSize(12);
+        font.setBold(false);
+        font.setWeight(50);
+        buttonQuit->setFont(font);
+        buttonQuit->setCursor(QCursor(Qt::CrossCursor));
+        tableView = new QTableView(centralwidget);
+        tableView->setObjectName(QString::fromUtf8("tableView"));
+        tableView->setGeometry(QRect(9, 9, 251, 211));
+        Tmp = new QPushButton(centralwidget);
+        Tmp->setObjectName(QString::fromUtf8("Tmp"));
+        Tmp->setGeometry(QRect(10, 220, 141, 31));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -49,6 +65,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         buttonQuit->setText(QCoreApplication::translate("MainWindow", "Quit", nullptr));
+        Tmp->setText(QCoreApplication::translate("MainWindow", "tmp", nullptr));
     } // retranslateUi
 
 };
