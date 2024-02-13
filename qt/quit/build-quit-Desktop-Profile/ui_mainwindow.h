@@ -33,11 +33,13 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->setEnabled(true);
         MainWindow->resize(267, 274);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         buttonQuit = new QPushButton(centralwidget);
         buttonQuit->setObjectName(QString::fromUtf8("buttonQuit"));
+        buttonQuit->setEnabled(true);
         buttonQuit->setGeometry(QRect(149, 220, 111, 31));
         QFont font;
         font.setPointSize(12);
@@ -45,6 +47,8 @@ public:
         font.setWeight(50);
         buttonQuit->setFont(font);
         buttonQuit->setCursor(QCursor(Qt::PointingHandCursor));
+        buttonQuit->setCheckable(false);
+        buttonQuit->setFlat(true);
         tableView = new QTableView(centralwidget);
         tableView->setObjectName(QString::fromUtf8("tableView"));
         tableView->setGeometry(QRect(9, 9, 251, 211));
