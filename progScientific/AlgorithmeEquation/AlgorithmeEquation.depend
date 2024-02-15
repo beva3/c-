@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1707878509 source:/home/raphael/Desktop/programmation/c-/progScientific/AlgorithmeEquation/main.cpp
+1707964305 source:/home/raphael/Desktop/programmation/c-/progScientific/AlgorithmeEquation/main.cpp
 	<iostream>
 	"Solve.h"
 
-1707878300 source:/home/raphael/Desktop/programmation/c-/progScientific/AlgorithmeEquation/src/Solve.cpp
+1707964175 source:/home/raphael/Desktop/programmation/c-/progScientific/AlgorithmeEquation/src/Solve.cpp
 	"Solve.h"
 
-1707878098 /home/raphael/Desktop/programmation/c-/progScientific/AlgorithmeEquation/include/Solve.h
+1707962873 /home/raphael/Desktop/programmation/c-/progScientific/AlgorithmeEquation/include/Solve.h
 	<cmath>
 
